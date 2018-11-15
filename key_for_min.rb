@@ -5,7 +5,7 @@
 # if name_hash == {}
 #   return nil
 # end
-# 
+#
 # small = ""
 # #min = 100
 # min = nil
@@ -14,7 +14,7 @@
 #   if( min == nil)
 #   min = value
 #   small = furniture
-# 
+#
 #   elsif value < min
 #     min = value
 #     small = furniture
@@ -24,10 +24,9 @@
 # end
 
 def key_for_min_value(name_hash)
- minimum = hash.values.min
+ minimum = name_hash.values.min
  name_hash.select do |key, value|
    minimum == value
    key
  end
-end   
-
+end
